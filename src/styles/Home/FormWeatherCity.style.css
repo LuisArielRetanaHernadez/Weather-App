@@ -1,0 +1,13 @@
+.container-form-weather-city {
+    @apply w-full h-2/5 flex flex-col items-center justify-center;
+}
+.container-form-weather {
+    @apply w-3/6  p-2 box-border;
+    background-color: #EEEEEE;
+}
+.input-search-weather {
+    @apply w-4/5 p-1 border-blue-900 border-2 outline-none;
+}
+.btn-search-weather {
+    @apply w-1/5 p-1 bg-white text-blue-700 border-2;
+}

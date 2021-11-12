@@ -1,0 +1,13 @@
+.container-menu {
+    height: 10%;
+    @apply box-border;
+}
+.nav-menu {
+    @apply box-border;
+}
+.list-menu {
+    @apply flex items-center justify-between p-2 box-border;
+}
+.logo-menu a h3 {
+    @apply text-2xl font-bold text-white;
+}

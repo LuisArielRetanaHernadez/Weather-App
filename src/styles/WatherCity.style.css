@@ -1,0 +1,54 @@
+.container-weather-city {
+    @apply w-1/6 h-1/4 rounded-lg box-border p-2;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    animation-name: pon;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease
+}
+.container-name-city {
+    @apply h-1/6 flex items-center justify-center;
+}
+.about-weather {
+    @apply h-4/6 flex flex-row items-center justify-center box-border;
+}
+.temp-weather{
+    @apply text-5xl font-semibold m-1
+}
+.container-icon-weather {
+    @apply flex justify-center items-center 
+}
+.container-link-about-weather {
+    @apply flex flex-col flex-nowrap justify-center items-center;
+    @apply w-full h-1/6 rounded-bl-lg rounded-br-lg text-transparent;
+}
+.container-link-about-weather a{
+    @apply w-full rounded-bl-lg rounded-br-lg text-transparent;
+    transition: 1s;
+}
+.line-about-weather {
+    @apply w-1/4 border-2 rounded;
+    transition: width 1s;
+}
+.container-weather-city:hover .line-about-weather {
+    @apply w-full;
+}
+.container-weather-city:hover .container-link-about-weather a {
+    @apply text-blue-900;
+}
+@keyframes pon {
+   from {
+       transform: translateY(-25%);
+   }
+   /* 25% {
+       transform: translateY(10%);
+   }
+   75%{
+    transform: translateY(15%);
+   } */
+   to {
+       transform: translateY(0%);
+   }
+}

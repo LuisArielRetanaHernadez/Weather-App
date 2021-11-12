@@ -1,0 +1,4 @@
+.container-home {
+    height: 90%;
+    @apply flex justify-center flex-wrap content-start;
+}
