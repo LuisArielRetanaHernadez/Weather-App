@@ -1,12 +1,14 @@
 .container-weather-information {
     height: 90%;
-    @apply w-screen overflow-hidden;
+    @apply w-screen md:overflow-hidden overflow-y-auto;
 }
 .container-information {
-    @apply w-full h-2/5;
+    @apply h-3/6;
+    @apply w-full lg:h-2/5;
     @apply flex items-center justify-center;
 }
 .container-details {
-    @apply w-full h-2/5 flex items-center justify-center;
+    @apply h-3/6;
+    @apply w-full lg:h-2/5 flex items-center justify-center;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 }

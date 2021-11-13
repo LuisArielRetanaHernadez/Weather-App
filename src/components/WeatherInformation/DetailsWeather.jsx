@@ -19,8 +19,8 @@ const DetailsWeather = ({dataWeather}) => {
                     <li className='item-details-weather'>Percepcion Humana temperatura: {(dataWeather?.main?.feels_like - 273.15).toFixed(2)}°c</li>
                 </ul>
             </ul>
-            <ul className='list-details-weather-optional'>
-                <li className='item-details-weather'>volumen de la lluvia: 3mm</li>
+            <ul className={`${dataWeather.rain ? 'list-details-weather-optional' : dataWeather.snow ? 'list-details-weather-optional' : 'hidden' }`}>
+                <li className='item-details-weather'>{dataWeather.rain ?  dataWeather.rain?.h1 : null }</li>
                 <li className='item-details-weather'>valumen de lluvia en 3 hr: 5mm</li>
             </ul>
         </div>

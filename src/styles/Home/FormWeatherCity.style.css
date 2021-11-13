@@ -2,7 +2,9 @@
     @apply w-full h-2/5 flex flex-col items-center justify-center;
 }
 .container-form-weather {
-    @apply w-3/6  p-2 box-border;
+    @apply w-11/12;
+    @apply lg:w-3/6  p-2 box-border;
+
     background-color: #EEEEEE;
 }
 .input-search-weather {

@@ -27,10 +27,11 @@ const Home = () => {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${nameCity.nameCity}&appid=8ca1e3c1a89eceaa54ef9373f9207490&lang=es`
             setLoaderState(true)
             setDataWeather({})
+            setErr(null)
             api.get(url).then(response => {
                 if(response.err){
                     setErr(response)
-                    setDataWeather([])
+                    setDataWeather({})
                 }else{
                     setErr(null)
                     setDataWeather(response)
