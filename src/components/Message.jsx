@@ -1,11 +1,9 @@
 
-// estilos del componente Message 
 // hooks react
 import { useRef } from 'react'
 
 // estilos del componente Message
 import '../styles/Message.style.css'
-import { useEffect } from 'react';
 
 const Message = ({status, statusText, err}) => {
 
