@@ -20,7 +20,7 @@ const DetailsWeather = ({dataWeather}) => {
                 </ul>
             </ul>
             <ul className={`${dataWeather.rain ? 'list-details-weather-optional' : dataWeather.snow ? 'list-details-weather-optional' : 'hidden' }`}>
-                <li className='item-details-weather'>{dataWeather.rain ?  dataWeather.rain?.h1 : null }</li>
+                <li className='item-details-weather'>{dataWeather.rain ?  dataWeather.rain['1h'] : null }</li>
                 <li className='item-details-weather'>valumen de lluvia en 3 hr: 5mm</li>
             </ul>
         </div>

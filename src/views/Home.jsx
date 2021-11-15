@@ -18,7 +18,7 @@ const Home = () => {
 
     const [nameCity, setNameCity] = useState({nameCity: 'Mexico'})
     const [dataWeather, setDataWeather] = useState({})
-    const [err, setErr] = useState(null)
+    const [err, setErr] = useState({})
     const [loaderState, setLoaderState] = useState(false)
 
     useEffect(() => {
@@ -27,13 +27,13 @@ const Home = () => {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${nameCity.nameCity}&appid=8ca1e3c1a89eceaa54ef9373f9207490&lang=es`
             setLoaderState(true)
             setDataWeather({})
-            setErr(null)
+            setErr({})
             api.get(url).then(response => {
                 if(response.err){
                     setErr(response)
                     setDataWeather({})
                 }else{
-                    setErr(null)
+                    setErr({})
                     setDataWeather(response)
                 }
                 setLoaderState(false)
