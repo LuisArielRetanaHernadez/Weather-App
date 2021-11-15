@@ -15,7 +15,7 @@ const InformationBasicWeather = ({dataWeather}) => {
             </div>
             <div className='container-temp m-1'>
                 <h2 className='temp-weather m-1'>{(dataWeather?.main?.temp -  273.15).toFixed(2)}°c</h2>
-                <img className='icon-weather' src='https://openweathermap.org/img/w/04n.png' alt='icon del clima' />
+                <img className='icon-weather' src={`https://openweathermap.org/img/w/${dataWeather.weather[0].icon}.png`} alt='icon del clima' />
             </div>
             <div className='container-discription-weather m-1'>
                 <p>{dataWeather?.weather[0]?.description}</p>
