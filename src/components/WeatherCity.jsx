@@ -11,7 +11,7 @@ const WeatherCity = ({dataWeather}) => {
         <div className='container-weather-city'>
             <div className='container-name-city'><h3>{dataWeather.name}</h3></div>
             <div  className='about-weather'>
-                <h2 className='temp-weather'>{(dataWeather.main.temp -  273.15).toFixed(2)}°c</h2>
+                <h2 className='temp-weather'>{(dataWeather.main.temp -  273.15).toFixed(1)}°c</h2>
                 <div className='container-icon-weather'>
                     <img className='icon-weather' src={`https://openweathermap.org/img/w/${dataWeather.weather[0].icon}.png`} alt='icono del clima' />
                 </div>

@@ -24,7 +24,6 @@ const WeatherInformation = () => {
     useEffect(() => {
 
         const api = helpHttp()
-        console.log(data)
 
         if(data){
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${data?.name}&appid=8ca1e3c1a89eceaa54ef9373f9207490&lang=es`
@@ -42,7 +41,7 @@ const WeatherInformation = () => {
         }
 
     },[data])
-    console.log(dataWeather)
+    
     return (
         <div className='container-weather-information'>
             {err}

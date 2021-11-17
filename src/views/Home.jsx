@@ -40,7 +40,6 @@ const Home = () => {
             })
         }
     },[nameCity])
-    console.log(err)
     return (
         <div className='container-home w-full'>
             <FormWeatherCity submitNameCity={setNameCity}/>
